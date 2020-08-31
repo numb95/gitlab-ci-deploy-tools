@@ -2,7 +2,7 @@ FROM alpine:3.12.0
 
 # Install required tools
 
-RUN apk add --update curl gettext net-tools openssl bash && \
+RUN apk add --update curl make gettext net-tools openssl bash && \
 rm -rf /var/cache/apk/*
 
 WORKDIR /tmp/install_dir
