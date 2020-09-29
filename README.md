@@ -3,12 +3,20 @@ A tiny but useful docker image based on alpine which contain kubectl, helm and o
 
 This image currently includes:
 
-docker 
+docker client
+
 envsubst 
+
 helm2
+
 helm
+
 kubectl
+
 yq
+
 curl
+
 make
+
 net-tools
