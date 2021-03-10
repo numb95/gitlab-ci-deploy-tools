@@ -2,9 +2,7 @@ FROM alpine:3.13.2
 
 # Install required tools
 
-RUN apk add --update curl make docker gettext net-tools openssl bash && \
-rm -rf /var/cache/apk/*
-
+RUN apk add --no-cache curl make docker gettext net-tools openssl
 WORKDIR /tmp/install_dir
 # Install Helm 3
 RUN curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash 
