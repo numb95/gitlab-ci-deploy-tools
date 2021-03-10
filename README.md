@@ -7,8 +7,6 @@ docker client
 
 envsubst 
 
-helm2
-
 helm
 
 kubectl
