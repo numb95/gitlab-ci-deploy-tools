@@ -20,3 +20,5 @@ make
 net-tools
 
 openssh-client
+
+rsync
