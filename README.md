@@ -18,3 +18,5 @@ curl
 make
 
 net-tools
+
+openssh-client
