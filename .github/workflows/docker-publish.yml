@@ -41,7 +41,7 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitlab-ci-deploy-tools:latest,${{ secrets.DOCKERHUB_USERNAME }}/gitlab-ci-deploy-tools:${GITHUB_REF##*/}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/gitlab-ci-deploy-tools:latest,${{ secrets.DOCKER_HUB_USERNAME }}/gitlab-ci-deploy-tools:${GITHUB_REF##*/}
           labels: ${{ steps.meta.outputs.labels }}
       - name: Build and push Docker image to ghcr
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
