@@ -41,7 +41,7 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: numb95/gitlab-ci-deploy-tools:latest,numb95/gitlab-ci-deploy-tools:${GITHUB_REF##*/}
+          tags: numb95/gitlab-ci-deploy-tools:latest
           labels: ${{ steps.meta.outputs.labels }}
       - name: Build and push Docker image to ghcr
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
