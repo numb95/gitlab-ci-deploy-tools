@@ -40,6 +40,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          registry: registry-1.docker.io
           push: ${{ github.event_name != 'pull_request' }}
           tags: numb95/gitlab-ci-deploy-tools:latest
           labels: ${{ steps.meta.outputs.labels }}
